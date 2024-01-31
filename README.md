@@ -61,6 +61,8 @@ usage: cat test.txt | java wc [-clmw]
 
 ## Examples
 
+To demonstrate the usage of **java-wc**, let's consider the `test.txt` file located in the `examples` folder. Make sure you navigate to the examples directory before running the following commands, or you can also use `examples/test.txt` instead of `test.txt` if you are running commands from the repository folder.
+
 ```bash
 $ java wc -l test.txt
   7145 test.txt
