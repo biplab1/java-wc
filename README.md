@@ -22,7 +22,9 @@ Welcome to **java-wc**, a simple Java-based tool designed to provide essential f
 - **Character Count**: Calculate the total character count, including spaces, in a given input file.
 - **Byte Count**: Measure the total byte count in a input file.
 
-**Note**: The byte count feature includes the ability to override the character count, and vice versa. Whichever comes last in the list of options will take precedence. The output is always in the following order: line count, word count, character/byte count.
+**Note**: The byte count feature includes the ability to override the character count, and vice versa. Whichever comes last in the list of options will take precedence. The output is always in the following order: line count, word count, character/byte count and file name. 
+
+When no files are specified, the program utilizes the standard input, and there is no presentation of a file name.
 
 
 ## Getting Started
