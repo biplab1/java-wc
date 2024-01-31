@@ -65,10 +65,10 @@ To demonstrate the usage of **java-wc**, let's consider the `test.txt` file loca
 
 ```bash
 $ java wc -l test.txt
-  7145 test.txt
+   7145 test.txt
 
 $ java wc -w test.txt
- 58164 test.txt
+  58164 test.txt
 
 $ java wc -c test.txt
  342190 test.txt
@@ -77,11 +77,11 @@ $ java wc -m test.txt
  339292 test.txt
 
 $ java wc test.txt
-  7145   58164  342190 test.txt 
+   7145   58164  342190 test.txt 
 ```
 
 ## Reference
-This project idea has been taken from [Coding Challenges](https://codingchallenges.fyi/challenges/challenge-wc)
+This project idea has been taken from [Coding Challenges](https://codingchallenges.fyi/challenges/challenge-wc).
 
 
 ## License
