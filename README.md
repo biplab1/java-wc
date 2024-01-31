@@ -93,7 +93,7 @@ $ java wc test.txt
 $ cat test.txt | wc -lmw
     7145   58164  339292
 
-# Multiple files as inputs
+# Multiple input files
 $ java wc -lmw test.txt test1.txt
     7145   58164  339292 test.txt 
     3761   29564  163949 test1.txt 
