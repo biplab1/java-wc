@@ -17,10 +17,10 @@ Welcome to **java-wc**, a simple Java-based tool designed to provide essential f
 
 ## Features
 
-- **Word Count**: Easily determine the number of words in a text file.
+- **Word Count**: Easily determine the number of words in a input file.
 - **Line Count**: Obtain the total number of lines within a specified file.
-- **Character Count**: Calculate the total character count, including spaces, in a given text file.
-- **Byte Count**: Measure the total byte count in a text file.
+- **Character Count**: Calculate the total character count, including spaces, in a given input file.
+- **Byte Count**: Measure the total byte count in a input file.
 
 **Note**: The byte count feature includes the ability to override the character count, and vice versa. Whichever comes last in the list of options will take precedence. The output is always in the following order: line count, word count, character/byte count.
 
