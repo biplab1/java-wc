@@ -33,7 +33,7 @@ Explore the [Installation](#installation) and [Usage](#usage) sections below.
 
 This code requires JDK-8 or later to be installed on your local computer. 
 
-## Installation
+### Installation
 
 ```bash
 
@@ -47,7 +47,7 @@ cd java-wc
 javac wc.java
 ```
 
-## Usage
+### Usage
 
 ```bash
 
@@ -59,7 +59,7 @@ usage: cat test.txt | java wc [-clmw]
 
 ```
 
-## Examples
+### Examples
 
 To demonstrate the usage of **java-wc**, let's consider the `test.txt` file located in the `examples` folder. Make sure you navigate to the examples directory before running the following commands, or you can also use `examples/test.txt` instead of `test.txt` if you are running commands from the repository folder.
 
