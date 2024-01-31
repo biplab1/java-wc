@@ -13,7 +13,7 @@ A simple Java-based tool that incorporates some of the functionalities of the wc
 
 ## Introduction
 
-Welcome to **java-wc**, a simple Java-based tool designed to provide essential functionalities akin to the widely-used '**wc**' (word count) tool. This tool provides essential text file analysis capabilities, including line count, word count, character count, and byte count. The development of java-wc was driven by a desire to enhance programming skills and gain hands-on experience.
+Welcome to **java-wc**, a simple Java-based tool designed to provide essential functionalities akin to the widely-used '**wc**' (word count) tool. This tool provides essential input file analysis capabilities, including line count, word count, character count, and byte count. The development of java-wc was driven by a desire to enhance programming skills and gain hands-on experience.
 
 ## Features
 
