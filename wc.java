@@ -87,22 +87,14 @@ public class wc {
     }
 
 
-    private static void printTotal() {
-        int temp = flags[0] + flags[1] + flags[2] + flags[3];
-        if (temp == 0 || temp == 4) {
-            System.out.printf("%8d %7d %7d %s %n", total[0], total[1], total[2], "total");
-        } else {
-            if (total[0] != 0) {
-                System.out.printf("%8d ", total[0]);
-            }
-            if (total[1] != 0) {
-                System.out.printf("%7d ", total[1]);
-            }
-            if (total[2] != 0) {
-                System.out.printf("%7d ", total[2]);
-            }
-            System.out.printf("%s %n", "total");
+    private static byte[] readBytes(InputStream inputStream) throws IOException {
+        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+        byte[] data = new byte[1024];
+        int length;
+        while ((length = inputStream.read(data)) != -1) {
+            buffer.write(data, 0, length);
         }
+        return buffer.toByteArray();
     }
 
 
@@ -121,10 +113,11 @@ public class wc {
             total[2] += bCount;
             System.out.printf("%8d %7d %7d %s %n", lCount, wCount, bCount, inputFile);
         } else {
+            System.out.print(" ");
             if (flags[0] != 0) {
                 lCount = lineCount(new ByteArrayInputStream(fData));
                 total[0] += lCount;
-                System.out.printf("%8d ", lCount);
+                System.out.printf("%7d ", lCount);
             }
             if (flags[1] != 0) {
                 wCount = wordCount(new ByteArrayInputStream(fData));
@@ -147,14 +140,23 @@ public class wc {
     }
 
 
-    private static byte[] readBytes(InputStream inputStream) throws IOException {
-        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
-        byte[] data = new byte[1024];
-        int length;
-        while ((length = inputStream.read(data)) != -1) {
-            buffer.write(data, 0, length);
+    private static void printTotal() {
+        int temp = flags[0] + flags[1] + flags[2] + flags[3];
+        if (temp == 0 || temp == 4) {
+            System.out.printf("%8d %7d %7d %s %n", total[0], total[1], total[2], "total");
+        } else {
+            System.out.print(" ");
+            if (total[0] != 0) {
+                System.out.printf("%7d ", total[0]);
+            }
+            if (total[1] != 0) {
+                System.out.printf("%7d ", total[1]);
+            }
+            if (total[2] != 0) {
+                System.out.printf("%7d ", total[2]);
+            }
+            System.out.printf("%s %n", "total");
         }
-        return buffer.toByteArray();
     }
 
 
