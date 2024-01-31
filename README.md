@@ -24,7 +24,7 @@ Welcome to **java-wc**, a simple Java-based tool designed to provide essential f
 
 **Note**: The byte count feature includes the ability to override the character count, and vice versa. Whichever comes last in the list of options will take precedence. The output is always in the following order: line count, word count, character/byte count and file name. 
 
-When no files are specified, the program utilizes the standard input, and there is no presentation of a file name. Also, total of all the values are printed along with the keyword 'total' when more than one files are present.
+When no files are specified, the program utilizes the standard input, and there is no presentation of a file name. When multiple input files are specified, a line containing cumulative counts for all the files is presented separately following the output for the last file along with the keyword `total`.
 
 
 ## Getting Started
@@ -66,18 +66,26 @@ usage: cat test.txt | java wc [-clmw]
 To demonstrate the usage of **java-wc**, let's consider the `test.txt` file located in the `examples` folder. Make sure you navigate to the examples directory before running the following commands, or you can also use `examples/test.txt` instead of `test.txt` if you are running commands from the repository folder.
 
 ```bash
+# Number of lines
 $ java wc -l test.txt
     7145 test.txt
 
+# Number of words
 $ java wc -w test.txt
    58164 test.txt
 
+# Number of bytes
 $ java wc -c test.txt
   342190 test.txt
 
+# Number of characters
 $ java wc -m test.txt
   339292 test.txt
 
+```
+```bash
+
+# Default option is equivalent to specifying -l, -w and -c options
 $ java wc test.txt
     7145   58164  342190 test.txt
 
@@ -85,7 +93,7 @@ $ java wc test.txt
 $ cat test.txt | wc -lmw
     7145   58164  339292
 
-# Multiple files as input
+# Multiple files as inputs
 $ java wc -lmw test.txt test1.txt
     7145   58164  339292 test.txt 
     3761   29564  163949 test1.txt 
