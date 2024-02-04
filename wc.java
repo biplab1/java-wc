@@ -70,6 +70,7 @@ public class wc {
         } else {
             processFiles(inputFiles);
         }
+        System.exit(0);
     }
 
 
@@ -120,6 +121,7 @@ public class wc {
         //  0, 1, 2, 3 -> -l, -w, -m, -c
         int lCount = 0, wCount = 0, bCount = 0;
 
+        System.out.print(" ");
         if (flags[0] + flags[1] + flags[2] + flags[3] == 0) {
             lCount = lineCount(new ByteArrayInputStream(fData));
             wCount = wordCount(new ByteArrayInputStream(fData));
@@ -127,9 +129,8 @@ public class wc {
             total[0] += lCount;
             total[1] += wCount;
             total[2] += bCount;
-            System.out.printf("%8d %7d %7d %s %n", lCount, wCount, bCount, inputFile);
+            System.out.printf("%7d %7d %7d %s %n", lCount, wCount, bCount, inputFile);
         } else {
-            System.out.print(" ");
             if (flags[0] != 0) {
                 lCount = lineCount(new ByteArrayInputStream(fData));
                 total[0] += lCount;
@@ -158,10 +159,11 @@ public class wc {
 
     private static void printTotal() {
         int temp = flags[0] + flags[1] + flags[2] + flags[3];
+
+        System.out.print(" ");
         if (temp == 0 || temp == 4) {
-            System.out.printf("%8d %7d %7d %s %n", total[0], total[1], total[2], "total");
+            System.out.printf("%7d %7d %7d %s %n", total[0], total[1], total[2], "total");
         } else {
-            System.out.print(" ");
             if (total[0] != 0) {
                 System.out.printf("%7d ", total[0]);
             }
