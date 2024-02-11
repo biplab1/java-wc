@@ -8,6 +8,7 @@ A simple Java-based tool that incorporates some of the functionalities of the wc
 - [Installation](#installation)
 - [Usage](#usage)
 - [Examples](#examples)
+- [To-do List](#to-do-list)
 - [Reference](#reference)
 - [License](#license)
 
@@ -99,7 +100,9 @@ $ java wc -lmw test.txt test1.txt
     3761   29564  163949 test1.txt 
    10906   87728  503241 total
 ```
-
+## To-do List
+- [] speed up the calculations
+  
 ## Reference
 This project idea has been taken from [Coding Challenges](https://codingchallenges.fyi/challenges/challenge-wc).
 
