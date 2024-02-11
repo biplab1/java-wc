@@ -101,7 +101,8 @@ $ java wc -lmw test.txt test1.txt
    10906   87728  503241 total
 ```
 ## To-do List
-- [] speed up the calculations
+- speed up the calculations
+- In some cases, the output of our code for byte count doesn't match with that of wc, make it match.
   
 ## Reference
 This project idea has been taken from [Coding Challenges](https://codingchallenges.fyi/challenges/challenge-wc).
