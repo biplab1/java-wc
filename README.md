@@ -100,14 +100,14 @@ $ java wc -lmw test.txt test1.txt
     3761   29564  163949 test1.txt 
    10906   87728  503241 total
 ```
+
 ## To-do List
-- parse the document once. Might speed up the overall calculations
+- parse the document once.
 - caculate all the four counts while parsing once. Merge all the separate counting functions.
-- In some cases (other than txt files), the output of our code for word count and line count doesn't match with that of `wc`, make it consistent.
+- Improve the line and word count functions (for files other than TXT files), make it consistent with `wc`.
   
 ## Reference
 This project idea has been taken from [Coding Challenges](https://codingchallenges.fyi/challenges/challenge-wc).
-
 
 ## License
 
