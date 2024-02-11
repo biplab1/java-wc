@@ -8,7 +8,6 @@ A simple Java-based tool that incorporates some of the functionalities of the wc
 - [Installation](#installation)
 - [Usage](#usage)
 - [Examples](#examples)
-- [To-do List](#to-do-list)
 - [Reference](#reference)
 - [License](#license)
 
@@ -101,11 +100,6 @@ $ java wc -lmw test.txt test1.txt
    10906   87728  503241 total
 ```
 
-## To-do List
-- parse the document once.
-- caculate all the four counts while parsing once. Merge all the separate counting functions.
-- Improve the line and word count functions (for files other than TXT files), make it consistent with `wc`.
-  
 ## Reference
 This project idea has been taken from [Coding Challenges](https://codingchallenges.fyi/challenges/challenge-wc).
 
