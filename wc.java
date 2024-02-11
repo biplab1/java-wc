@@ -22,6 +22,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+// TODO
+// - parse the document once. 
+// - caculate all the four counts while parsing once. Merge all the separate counting functions.
+// - Improve the line and word count functions (for files other than TXT files), make it consistent with `wc`.
+
+
 import java.io.*;
 import java.util.*;
 
