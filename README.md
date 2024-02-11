@@ -90,7 +90,7 @@ $ java wc test.txt
     7145   58164  342190 test.txt
 
 # Piped input with options combined together
-$ cat test.txt | wc -lmw
+$ cat test.txt | java wc -lmw
     7145   58164  339292
 
 # Multiple input files
