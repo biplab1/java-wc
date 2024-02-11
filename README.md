@@ -102,7 +102,7 @@ $ java wc -lmw test.txt test1.txt
 ```
 ## To-do List
 - speed up the calculations
-- In some cases, the output of our code for byte count doesn't match with that of wc, make it match.
+- In some cases, the output of our code for byte count doesn't match with that of `wc`, make it match.
   
 ## Reference
 This project idea has been taken from [Coding Challenges](https://codingchallenges.fyi/challenges/challenge-wc).
